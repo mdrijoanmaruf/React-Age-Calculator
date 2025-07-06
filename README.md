@@ -15,7 +15,7 @@ A modern, responsive Age Calculator built with React, Vite, and Tailwind CSS. Ca
 
 ## 🚀 Demo
 
-[Live Demo](https://rijoan-age-calculator.netlify.app/) - Replace with your actual Vercel URL
+[Live Demo](https://rijoan-age-calculator.netlify.app/) 
 
 ## 📱 Screenshots
 
@@ -131,15 +131,12 @@ npm run build
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
 **Md Rijoan Maruf**
 - Website: [rijoan.com](https://rijoan.com)
-- GitHub: [@YourGitHubUsername](https://github.com/yourusername)
+- GitHub: [@mdrijoanmaruf](https://github.com/mdrijoanmaruf)
 
 ## 🙏 Acknowledgments
 
