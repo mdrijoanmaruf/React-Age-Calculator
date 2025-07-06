@@ -29,7 +29,7 @@ const AgeResultsSection = ({ ageData, showResults, isAnimating, formatNumber }) 
       </div>
 
       {/* Additional Info Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
         {/* Total Days Card */}
         <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-1">
           <div className="flex flex-col items-center text-center">

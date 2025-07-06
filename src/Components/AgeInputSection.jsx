@@ -76,18 +76,18 @@ const AgeInputSection = ({ birthDate, setBirthDate, onCalculate, today }) => {
   return (
     <div className="mb-10">
       <div className="mb-8">
-        <label className="block text-lg font-medium text-gray-700 mb-4">
+        <label className="block text-lg md:text-xl font-medium text-gray-700 mb-6 px-4">
           Select your birth date:
         </label>
-        <div className="flex flex-wrap justify-center gap-3 max-w-md mx-auto">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-full sm:max-w-md mx-auto px-4">
           {/* Day */}
-          <div className="flex flex-col">
-            <label className="text-sm text-gray-600 mb-1">Day</label>
+          <div className="flex flex-col w-full sm:w-auto">
+            <label className="text-sm text-gray-600 mb-2 text-center">Day</label>
             <select
               value={day}
               onChange={(e) => handleDateChange('day', e.target.value)}
               onKeyPress={handleKeyPress}
-              className="px-3 py-3 text-lg border-2 border-gray-200 rounded-xl bg-white transition-all duration-300 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 font-['Poppins'] min-w-[80px]"
+              className="w-full sm:min-w-[90px] px-4 py-3 text-base md:text-lg border-2 border-gray-200 rounded-xl bg-white transition-all duration-300 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 font-['Poppins'] text-center"
             >
               <option value="">Day</option>
               {days.map(day => (
@@ -99,13 +99,13 @@ const AgeInputSection = ({ birthDate, setBirthDate, onCalculate, today }) => {
           </div>
 
           {/* Month */}
-          <div className="flex flex-col">
-            <label className="text-sm text-gray-600 mb-1">Month</label>
+          <div className="flex flex-col w-full sm:w-auto">
+            <label className="text-sm text-gray-600 mb-2 text-center">Month</label>
             <select
               value={month}
               onChange={(e) => handleDateChange('month', e.target.value)}
               onKeyPress={handleKeyPress}
-              className="px-3 py-3 text-lg border-2 border-gray-200 rounded-xl bg-white transition-all duration-300 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 font-['Poppins'] min-w-[120px]"
+              className="w-full sm:min-w-[140px] px-4 py-3 text-base md:text-lg border-2 border-gray-200 rounded-xl bg-white transition-all duration-300 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 font-['Poppins'] text-center"
             >
               <option value="">Month</option>
               {months.map(month => (
@@ -117,13 +117,13 @@ const AgeInputSection = ({ birthDate, setBirthDate, onCalculate, today }) => {
           </div>
 
           {/* Year */}
-          <div className="flex flex-col">
-            <label className="text-sm text-gray-600 mb-1">Year</label>
+          <div className="flex flex-col w-full sm:w-auto">
+            <label className="text-sm text-gray-600 mb-2 text-center">Year</label>
             <select
               value={year}
               onChange={(e) => handleDateChange('year', e.target.value)}
               onKeyPress={handleKeyPress}
-              className="px-3 py-3 text-lg border-2 border-gray-200 rounded-xl bg-white transition-all duration-300 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 font-['Poppins'] min-w-[100px]"
+              className="w-full sm:min-w-[110px] px-4 py-3 text-base md:text-lg border-2 border-gray-200 rounded-xl bg-white transition-all duration-300 focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 font-['Poppins'] text-center"
             >
               <option value="">Year</option>
               {years.map(year => (
@@ -136,13 +136,15 @@ const AgeInputSection = ({ birthDate, setBirthDate, onCalculate, today }) => {
         </div>
       </div>
       
-      <button
-        onClick={onCalculate}
-        className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-10 py-4 text-xl font-semibold rounded-full hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 inline-flex items-center gap-3 shadow-lg"
-      >
-        <span>Calculate Age</span>
-        <span>🎂</span>
-      </button>
+      <div className="px-4">
+        <button
+          onClick={onCalculate}
+          className="w-full sm:w-auto bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-8 sm:px-10 py-3 sm:py-4 text-lg sm:text-xl font-semibold rounded-full hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 inline-flex items-center justify-center gap-3 shadow-lg"
+        >
+          <span>Calculate Age</span>
+          <span>🎂</span>
+        </button>
+      </div>
     </div>
   );
 };
