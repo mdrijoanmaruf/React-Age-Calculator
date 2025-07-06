@@ -1,10 +1,10 @@
 import './App.css'
-import { useAgeCalculator } from './hooks/useAgeCalculator.js'
-import AgeCalculatorHeader from './components/AgeCalculatorHeader.jsx'
-import AgeInputSection from './components/AgeInputSection.jsx'
-import AgeResultsSection from './components/AgeResultsSection.jsx'
-import ErrorNotification from './components/ErrorNotification.jsx'
-import Footer from './components/Footer.jsx'
+import { useAgeCalculator } from './hooks/useAgeCalculator'
+import AgeCalculatorHeader from './components/AgeCalculatorHeader'
+import AgeInputSection from './components/AgeInputSection'
+import AgeResultsSection from './components/AgeResultsSection'
+import ErrorNotification from './components/ErrorNotification'
+import Footer from './components/Footer'
 
 function App() {
   const {
